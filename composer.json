@@ -1,13 +1,16 @@
 {
     "name": "atwandev/laravel-media",
     "description": "Easily upload your media in Laravel",
+    "keywords": [
+        "laravel",
+        "php",
+        "composer",
+        "laravel-media",
+        "laravel-media-uploader"
+    ],
+    "minimum-stability": "dev",
     "type": "library",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "AtwanDev\\LaravelMedia\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Mohammadreza Atwan",
@@ -16,5 +19,31 @@
             "homepage": "https://github.com/atwandev"
         }
     ],
-    "require": {}
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AtwanDev\\LaravelMedia\\LaravelMediaServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "laravel/framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AtwanDev\\LaravelMedia\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AtwanDev\\LaravelMedia\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
 }
