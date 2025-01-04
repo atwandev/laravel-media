@@ -1,0 +1,20 @@
+{
+    "name": "atwandev/laravel-media",
+    "description": "Easily upload your media in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AtwanDev\\LaravelMedia\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammadreza Atwan",
+            "email": "atwandev@gmail.com",
+            "role": "Owner",
+            "homepage": "https://github.com/atwandev"
+        }
+    ],
+    "require": {}
+}
