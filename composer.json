@@ -33,6 +33,10 @@
         "php": "^8.2",
         "laravel/framework": "^10.0"
     },
+    "require-dev": {
+        "orchestra/testbench": "8.x-dev",
+        "phpunit/phpunit": "^10.5"
+    },
     "autoload": {
         "psr-4": {
             "AtwanDev\\LaravelMedia\\": "src/"
